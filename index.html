@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="The vendor-agnostic control plane for mixed robot fleets — unified dispatch, cross-fleet traffic management, uptime monitoring, ROI dashboards.">
+  <title>FleetMind — One Control Plane for Every Robot You Run</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="7" fill="#0369a1"/>
+          <circle cx="11" cy="11" r="3" fill="#fff"/>
+          <circle cx="21" cy="11" r="3" fill="#fff"/>
+          <circle cx="16" cy="21" r="3" fill="#fff"/>
+          <path d="M12.5 13.5 15 18M19.5 13.5 17 18M13.5 11h5" stroke="#7dd3fc" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span data-company>FleetMind</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Platform</a>
+        <a href="#how">How it works</a>
+        <a href="#numbers">Numbers</a>
+      </nav>
+      <a href="#cta" class="btn btn-primary btn-sm">Get a demo</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Robotics fleet operations platform</p>
+        <h1>Five robot vendors. One control plane.</h1>
+        <p class="lead">Your AMRs, cobots, and cleaning robots each ship with their own dashboard — and none of them talk. <span data-company>FleetMind</span> unifies dispatch, traffic, uptime, and ROI across every vendor on your floor. Kubernetes did it for containers; we do it for robots.</p>
+        <div class="hero-actions">
+          <a href="#cta" class="btn btn-primary">Get a demo</a>
+          <a href="#how" class="btn btn-ghost">See integrations</a>
+        </div>
+        <p class="hero-note">22 vendor integrations · VDA 5050 &amp; Open-RMF native · warehouse, hospital, hospitality</p>
+      </div>
+
+      <!-- Hero visual: control-plane architecture diagram -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="arch">
+          <div class="arch-row fleets">
+            <div class="fleet-node"><span class="fleet-kind">AMR</span>Vendor A<br><b>14 robots</b></div>
+            <div class="fleet-node"><span class="fleet-kind">Forklift</span>Vendor B<br><b>6 robots</b></div>
+            <div class="fleet-node"><span class="fleet-kind">Cleaning</span>Vendor C<br><b>4 robots</b></div>
+          </div>
+          <div class="arch-links">
+            <span class="link-line"></span><span class="link-line"></span><span class="link-line"></span>
+          </div>
+          <div class="arch-plane">
+            <span class="plane-title" data-company>FleetMind</span>
+            <span class="plane-sub">unified dispatch · traffic mgmt · health · ROI</span>
+          </div>
+          <div class="arch-links">
+            <span class="link-line"></span><span class="link-line"></span><span class="link-line"></span>
+          </div>
+          <div class="arch-row tasks">
+            <div class="task-chip ok">Pick wave 12 → AMR-07 <b>en route</b></div>
+            <div class="task-chip warn">Aisle 9 contention <b>rerouted 2</b></div>
+            <div class="task-chip ok">Dock 3 unload → FL-02 <b>queued</b></div>
+          </div>
+          <div class="arch-status">
+            <span>24 robots online</span><span>98.6% fleet uptime</span><span>1,240 tasks today</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section">
+    <div class="container">
+      <h2>Every new robot makes operations worse.</h2>
+      <p class="section-lead">The robots work. The seams between them don't — and the seams are where shifts get lost.</p>
+      <div class="cards cards-3">
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="8" height="7" rx="1.5"/><rect x="13" y="4" width="8" height="7" rx="1.5"/><rect x="8" y="14" width="8" height="7" rx="1.5"/></svg>
+          </div>
+          <h3>Five dashboards, zero picture</h3>
+          <p>Supervisors alt-tab between vendor consoles to answer one question: &ldquo;what's running?&rdquo; Nobody sees the whole floor at once.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21V8M7 8l-4 4M7 8l4 4"/><path d="M17 3v13M17 16l-4-4M17 16l4-4"/></svg>
+          </div>
+          <h3>Robot traffic jams</h3>
+          <p>Vendor A's AMR and Vendor B's forklift both claim aisle 9 — neither yields. Cross-fleet deadlocks stall picks for minutes at a time, every shift.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19h16M6 16l4-5 3 3 5-7" opacity="0.4"/><path d="M12 8v5M12 16.5v.5"/><circle cx="12" cy="12" r="9"/></svg>
+          </div>
+          <h3>ROI nobody can prove</h3>
+          <p>Finance asks what the robots return. The answer lives in five CSV exports with incompatible metrics. The next purchase order waits.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section section-tint" id="features">
+    <div class="container">
+      <h2>The layer your robots were missing.</h2>
+      <p class="section-lead">Sits above every vendor API and speaks the open standards — VDA 5050, Open-RMF — plus 22 native integrations.</p>
+      <div class="cards cards-4">
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h10"/><path d="m17 16 2 2 3.5-3.5" opacity="0"/><circle cx="19" cy="17.5" r="3"/><path d="m17.8 17.5 1 1 1.6-2"/></svg>
+          </div>
+          <h3>Unified task dispatch</h3>
+          <p>One queue for the whole floor. Tasks route to the best available robot regardless of vendor — by location, battery, payload, and skill.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/><path d="M2 21h20" opacity="0.5"/></svg>
+          </div>
+          <h3>Cross-fleet traffic management</h3>
+          <p>A shared spatial map arbitrates aisles, intersections, and elevators across vendors. Deadlocks resolve in milliseconds, not radio calls.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l2.5-6 4 12 2.5-6h5"/></svg>
+          </div>
+          <h3>Fleet health &amp; uptime</h3>
+          <p>Battery curves, error codes, and mission failures normalized across vendors — with predictive alerts before a robot strands mid-aisle.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="15" rx="2"/><path d="M7 15v-4M12 15V8M17 15v-6"/></svg>
+          </div>
+          <h3>ROI dashboards</h3>
+          <p>Cost per task, robot-hours vs. labor-hours, utilization by zone — one report finance accepts, updated live, exportable to anything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how">
+    <div class="container">
+      <h2>Online in days — no firmware, no forklift upgrades.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Connect your vendors</h3>
+          <p>Native connectors for 22 robot platforms plus VDA 5050 and Open-RMF for the rest. Read-only mode first, so nothing changes until you're ready.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Merge the map</h3>
+          <p>We fuse each vendor's facility map into one shared spatial model — zones, aisles, elevators, and the rules of who yields to whom.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Flip dispatch to unified</h3>
+          <p>Turn on cross-fleet task routing one zone at a time. Most sites run the whole floor through <span data-company>FleetMind</span> within a month.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NUMBERS ============ -->
+  <section class="section section-tint" id="numbers">
+    <div class="container">
+      <h2>What mixed fleets gain with one brain.</h2>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">+19%</div>
+          <p>fleet utilization from cross-vendor dispatch</p>
+        </div>
+        <div class="stat">
+          <div class="stat-num">−74%</div>
+          <p>cross-fleet traffic conflicts after map merge</p>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3 days</div>
+          <p>median time from first connector to live dashboard</p>
+        </div>
+      </div>
+
+      <div class="quote-card">
+        <blockquote>
+          <p>&ldquo;We run three robot vendors across two distribution centers. Before <span data-company>FleetMind</span>, aisle conflicts were a nightly radio argument. Now the floor self-arbitrates, utilization is up double digits, and I finally showed our CFO a cost-per-task number he didn't argue with.&rdquo;</p>
+          <footer>
+            <div class="avatar">JO</div>
+            <div>
+              <strong>James Okafor</strong>
+              <span>VP Operations, Meridian Fulfillment Group</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+
+      <div class="trust-row">
+        <span class="trust-badge">VDA 5050 native</span>
+        <span class="trust-badge">Open-RMF compatible</span>
+        <span class="trust-badge">SOC 2 Type II</span>
+        <span class="trust-badge">On-prem or cloud</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section-cta" id="cta">
+    <div class="container cta-inner">
+      <h2>See your whole floor in one pane.</h2>
+      <p>Tell us your vendors and we'll demo with a simulated version of your actual fleet mix.</p>
+      <form class="cta-form" id="signup-form">
+        <input type="email" placeholder="you@yourcompany.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-light">Get a demo</button>
+      </form>
+      <p class="cta-confirm" id="signup-confirm" hidden>Thanks — a fleet engineer will reach out within one business day.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="7" fill="#0369a1"/>
+            <circle cx="11" cy="11" r="3" fill="#fff"/>
+            <circle cx="21" cy="11" r="3" fill="#fff"/>
+            <circle cx="16" cy="21" r="3" fill="#fff"/>
+            <path d="M12.5 13.5 15 18M19.5 13.5 17 18M13.5 11h5" stroke="#7dd3fc" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span data-company>FleetMind</span>
+        </a>
+        <p>The vendor-agnostic control plane for physical robot fleets.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Platform</h4>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#numbers">Numbers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@fleetmind.example.com" data-email>hello@fleetmind.example.com</a>
+        <span data-domain>fleetmind.example.com</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 <span data-company>FleetMind</span>. All rights reserved. Robot and vendor names in demos are illustrative.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("signup-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      this.hidden = true;
+      document.getElementById("signup-confirm").hidden = false;
+    });
+  </script>
+</body>
+</html>
