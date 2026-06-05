@@ -1,4 +1,4 @@
-# FleetMind — Landing Page
+# Orquen Labs — Landing Page
 
 Static landing page for a **robotics fleet operations platform** startup (vendor-agnostic control plane: unified dispatch, cross-fleet traffic management, uptime, ROI). No build step, no dependencies — plain HTML/CSS/JS.
 
@@ -8,9 +8,9 @@ Edit the three values at the top of **`config.js`**:
 
 ```js
 const BRAND = {
-  companyName: "FleetMind",
-  domain: "fleetmind.example.com",
-  contactEmail: "hello@fleetmind.example.com"
+  companyName: "Orquen Labs",
+  domain: "orquenlabs.xyz",
+  contactEmail: "hello@orquenlabs.xyz"
 };
 ```
 
